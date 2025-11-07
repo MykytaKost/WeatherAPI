@@ -33,6 +33,7 @@ function getWeather (){
         weatherImg.src = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
         temp.textContent = `${Math.round(response.data.main.temp)}℃`;
         weatherDesc.textContent = `${response.data.weather[0].description}`;
+        weatherDesc.classList.add('description_red')
         fealsLike.textContent = `${Math.round(response.data.main.feels_like)}℃`;
         pressure.textContent = `${response.data.main.pressure}hPa`;
         humidity.textContent = `${response.data.main.humidity}%`;

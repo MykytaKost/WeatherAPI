@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap')
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-family: "Roboto", sans-serif
+
+header
+    @include flexConteiner(column, center, center)
+    @include box(100%, 20px, $main-color, $dark-color)
+    text-align: center
